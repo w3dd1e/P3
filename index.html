@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ohmyfood</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/80beb8e89e.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ohmyfood</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+	<body>
+		<!--*							HEADER								-->
 
-<body>
-    <header>
+		<header>
+			<nav>
+				<ul class="nav__list">
+					<li class="nav__logo">
+						<a class="logo__link">
+							<h1><img class="logo__img" alt="ohmyfood" src="images/logo/ohmyfood@2x.svg" /></h1>
+						</a>
+					</li>
+					<li class="nav__search">
+						<form class="search__form">
+							<input
+								type="search"
+								class="search__input"
+								placeholder="Paris, Belleville"
+							/>
+						</form>
+					</li>
+					<li class="nav__slogan">
+						<p class="slogan--big">Book the menu you like</p>
+						<p class="slogan--small">
+							Discover top-of-the-art restaurants we picked for
+							you
+						</p>
+					</li>
+					<li class="nav__button">
+						<button type="button">Explore our restaurants</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    </header>
+		<!--*							MAIN								-->
 
-    <main>
-    </main>
-    <footer>
+		<main>
+			<section class="how-to">
+				<h2 class="how-to__title">How it works</h2>
+				<ul class="how-to__container">
+					<li class="how-to__card">
+						<i class="fa-solid fa-mobile-screen-button"></i>
+						Choose a restaurant
+					</li>
+					<li class="how-to__card">
+						<i class="fa-solid fa-bars"></i>
+						Create your menu
+					</li>
+					<li class="how-to__card">
+						<i class="fa-solid fa-shop"></i>
+						Go enjoy it at the restaurant
+					</li>
+				</ul>
+			</section>
+			
+		</main>
 
-    </footer>
-</body>
+		<!--*							FOOTER								-->
 
-
+		<footer></footer>
+	</body>
 </html>
