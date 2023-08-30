@@ -1,2 +1,6 @@
-@use 'base/resets';
-@use 'base/typography'
+@use './vendors/vendors' as v;
+@use './base/base' as b;
+@use './abstracts/abstracts' as a;
+@use './components/components' as c;
+@use './layout/layout' as l;
+
