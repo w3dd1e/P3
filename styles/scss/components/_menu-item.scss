@@ -1,0 +1,28 @@
+.menu-item__card {
+    background-color: $background-white;
+    color: $text-black;
+    display: flex;
+
+    .menu-item__info {
+        flex: 1;
+        .menu-item__title {
+
+            //! INSERT FONT VALUES
+
+        }
+
+        .menu-item__desc {
+
+            //! INSERT FONT VALUES
+        }
+
+
+    }
+
+    .menu-item_price {
+        flex: 0;
+        align-items: flex-end;
+
+        //! INSERT FONT VALUES
+    }
+}
