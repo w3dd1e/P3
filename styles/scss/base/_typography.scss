@@ -1,7 +1,7 @@
 
 // Google Fonts imports
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
 //Font Variables
 $roboto: 'Roboto', sans-serif;
@@ -11,4 +11,14 @@ $shrikhand: 'Shrikhand', cursive;
 body {
     font-family: $roboto;
     font-weight: normal;
+    font-size: 16px;
+}
+
+a { 
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
