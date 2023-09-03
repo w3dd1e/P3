@@ -1,0 +1,7 @@
+.button {
+	background-color: $primary-color;
+	color: $text-white;
+	border-radius: 25%;
+	@include box-shadow;
+	
+}

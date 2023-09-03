@@ -1,6 +1,7 @@
 .menu-item__card {
     background-color: $background-white;
     color: $text-black;
+	@inlcude box-shadow;
     display: flex;
 
     .menu-item__info {

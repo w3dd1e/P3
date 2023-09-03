@@ -1,4 +1,5 @@
 .card {
+	@include box-shadow;
 	
 	&__img {
 		border-radius: 15% 15% 0 0;
