@@ -1,6 +1,7 @@
-@use './vendors/vendors' as v;
-@use './base/base' as b;
-@use './abstracts/abstracts' as a;
-@use './components/components' as c;
-@use './layout/layout' as l;
+@use './vendors/index' as v;
+@use './base/index' as b;
+@use './abstracts/index' as a;
+@use './components/index' as c;
+@use './layout/index' as l;
+@use './pages/index' as p;
 
