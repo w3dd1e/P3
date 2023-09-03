@@ -1,10 +1,11 @@
-
+@use "../abstracts" as a;
 
 .footer {
-    padding: 1rem;
-    background-color: $background-black;
-    color: text-white;
-	@include flex-column;
-	
-    
+	background-color: a.$background-black;
+	color: a.$text-white;
+	@include a.flex-column;
+
+	&__link {
+		color: a.$text-white;
+	}
 }

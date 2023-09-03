@@ -1,15 +1,17 @@
+@use '../abstracts' as a;
 .restaurants {
-	@include flex-column;
+	background-color: a.$background-grey;
+	@include a.flex-column;
 	
 	&__list {
-		@include flex-column;
+		@include a.flex-column;
 		gap: 1rem;
 		
 	}
 	
 	&__link {
 		flex: 1;
-		@include flex-column;
+		@include a.flex-column;
 		
 	}
 	
