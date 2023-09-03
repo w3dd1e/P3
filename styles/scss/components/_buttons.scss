@@ -1,7 +1,9 @@
+@use '../abstracts/' as a;
 .button {
-	background-color: $primary-color;
-	color: $text-white;
-	border-radius: 25%;
-	@include box-shadow;
+	background-color: a.$primary-color;
+	color: a.$text-white;
+	border-radius: 1rem;
+	border: none;
+	@include a.box-shadow;
 	
 }

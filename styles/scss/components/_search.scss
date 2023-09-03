@@ -1,0 +1,13 @@
+@use '../abstracts/' as a;
+.nav__search {
+	
+	.search__form {
+		
+		.search__input{
+			padding: .5rem 3rem;
+			background-color: a.$background-grey;
+			border: none;
+		}
+	}
+	
+}

@@ -1,0 +1,25 @@
+@use '../abstracts/' as a;
+.card {
+	background-color: a.$background-white;
+	@include a.box-shadow;
+	
+	&__img {
+		border-radius: 15px 15px 0 0;
+		width: 100%;
+		
+	}
+	
+	&__info {
+		@include a.flex-column;
+		
+	}
+	
+	&__title {
+		//!  INSERT FONT VALUES
+	}
+	
+	&__location {
+		//!  INSERT FONT VALUES
+	}
+	
+}

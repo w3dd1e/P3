@@ -1,7 +1,8 @@
+@use '../abstracts/' as a;
 .menu-item__card {
-    background-color: $background-white;
-    color: $text-black;
-	@inlcude box-shadow;
+    background-color: a.$background-white;
+    color: a.$text-black;
+	@inlcude a.box-shadow;
     display: flex;
 
     .menu-item__info {
