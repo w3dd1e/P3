@@ -44,8 +44,11 @@ ul {
   list-style-type: none;
 }
 
-body header, body section, body footer {
-  padding: 5%;
+body header {
+  padding-top: 1.5rem;
+}
+body section, body footer {
+  padding: 1rem;
 }
 
 nav {
@@ -85,9 +88,10 @@ nav {
 }
 
 .button {
+  padding: 0.5rem 1rem;
   background-color: #9356dc;
   color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
