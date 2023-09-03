@@ -1,9 +1,11 @@
 @use '../abstracts/' as a;
 .button {
+	padding: 0.5rem 1rem;
 	background-color: a.$primary-color;
 	color: a.$text-white;
-	border-radius: 1rem;
+	border-radius: 2rem;
 	border: none;
 	@include a.box-shadow;
+
 	
 }
