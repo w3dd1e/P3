@@ -99,15 +99,30 @@ nav {
 .card {
   background-color: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+}
+.card__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .card__img {
-  border-radius: 15px 15px 0 0;
-  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  flex: 1 100%;
+  object-fit: cover;
+  height: 15rem;
 }
 .card__info {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
+.card__like {
+  margin-left: auto;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
 .menu-item__card {
   background-color: #ffffff;
   color: #000000;

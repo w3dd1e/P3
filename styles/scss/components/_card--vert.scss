@@ -2,14 +2,24 @@
 .card {
 	background-color: a.$background-white;
 	@include a.box-shadow;
+	border-radius: 1rem;
+	
+	&__link {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 	
 	&__img {
-		border-radius: 15px 15px 0 0;
-		width: 100%;
+		border-radius: 1rem 1rem 0 0;
+		flex: 1 100%;
+		object-fit: cover;
+		height: 15rem;
 		
 	}
 	
 	&__info {
+		padding: 1rem;
 		@include a.flex-column;
 		
 	}
@@ -21,5 +31,12 @@
 	&__location {
 		//!  INSERT FONT VALUES
 	}
-	
+	 
+	&__like {
+		margin-left: auto;
+		font-size: 1.5rem;
+		padding: 1rem 2rem;
+		
+
+	}
 }
