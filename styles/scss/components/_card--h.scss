@@ -1,19 +1,20 @@
 @use '../abstracts/' as a;
-.menu-item__card {
+.vcard {
     background-color: a.$background-white;
     color: a.$text-black;
 	@inlcude a.box-shadow;
     display: flex;
 
-    .menu-item__info {
+    .&__info {
         flex: 1;
-        .menu-item__title {
+        
+        .&__title {
 
             //! INSERT FONT VALUES
 
         }
 
-        .menu-item__desc {
+        .&__desc {
 
             //! INSERT FONT VALUES
         }
@@ -21,7 +22,7 @@
 
     }
 
-    .menu-item_price {
+    .&__price {
         flex: 0;
         align-items: flex-end;
 
