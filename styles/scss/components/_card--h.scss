@@ -2,7 +2,6 @@
 
 .how-to__list {
 	counter-reset: orderedlist;
-	padding: 0;
 }
 
 .how-to__hcard {
@@ -17,9 +16,9 @@
 		line-height: 0.75rem;
 		text-align: center;
 		color: a.$text-white;
-		padding: 0.25rem;
 		position: absolute;
-		left: -0.75rem;
+		padding-top: .3rem;
+		left: -0.7rem;
 	}
 }
 .hcard {
@@ -35,6 +34,7 @@
 
 		i {
             margin-right: 1rem;
+			color: a.$text-grey;
 		}
 
 		&__title {
