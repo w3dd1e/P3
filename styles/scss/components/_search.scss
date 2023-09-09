@@ -1,13 +1,37 @@
-@use '../abstracts/' as a;
+@use "../abstracts/" as a;
 .nav__search {
-	
+	align-self: stretch;
+
 	.search__form {
-		
-		.search__input{
-			padding: .5rem 3rem;
+		width: 100%;
+		position: relative;
+
+		&__icon {
+			text-align: center;
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 3rem;
+			line-height: 3rem;
+			right: 5.5rem;			
+			
+		}
+
+
+
+		.search__input {
+			@include a.box-shadow--inset;
+			width: 100%;
 			background-color: a.$background-grey;
 			border: none;
+			line-height: 3rem;
+			text-align: center;
+			font-weight: 700;
+
+			&::placeholder {
+				opacity: 1;
+				color: a.$text-black;
+			}
 		}
 	}
-	
 }

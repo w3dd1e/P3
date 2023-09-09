@@ -54,8 +54,14 @@ body ol, body ul {
   padding: 0;
 }
 
-nav {
-  margin: auto;
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav__logo {
+  align-content: center;
 }
 
 .footer {
@@ -91,10 +97,34 @@ nav {
   flex-direction: column;
 }
 
+.nav__search {
+  align-self: stretch;
+}
+.nav__search .search__form {
+  width: 100%;
+  position: relative;
+}
+.nav__search .search__form__icon {
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  right: 5.5rem;
+}
 .nav__search .search__form .search__input {
-  padding: 0.5rem 3rem;
+  box-shadow: inset 0px 8px 4px -4px rgba(0, 0, 0, 0.15);
+  width: 100%;
   background-color: #f2f2f2;
   border: none;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+.nav__search .search__form .search__input::placeholder {
+  opacity: 1;
+  color: #000000;
 }
 
 .button {
@@ -113,8 +143,8 @@ nav {
 }
 .vcard__link {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 .vcard__img {
   border-radius: 1rem 1rem 0 0;
