@@ -96,43 +96,72 @@ nav {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.card {
+.vcard {
   background-color: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 1rem;
 }
-.card__link {
+.vcard__link {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.card__img {
+.vcard__img {
   border-radius: 1rem 1rem 0 0;
   flex: 1 100%;
   object-fit: cover;
   height: 15rem;
 }
-.card__info {
-  padding: 1rem;
+.vcard__info {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
 }
-.card__like {
-  margin-left: auto;
+.vcard__like {
   font-size: 1.5rem;
-  padding: 1rem 2rem;
+  margin: 1rem 1.5rem 1rem auto;
 }
 
-.menu-item__card {
-  background-color: #ffffff;
-  color: #000000;
-  @inlcude a.box-shadow;
-  display: flex;
+.how-to__list {
+  counter-reset: orderedlist;
+  padding: 0;
 }
-.menu-item__card .menu-item__info {
+
+.how-to__hcard {
+  background-color: #f2f2f2;
+  position: relative;
+}
+.how-to__hcard::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #9356dc;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 0.25rem;
+  position: absolute;
+  left: -0.75rem;
+}
+
+.hcard {
+  border-radius: 1rem;
+  color: #000000;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+}
+.hcard__info {
+  padding: 1.5rem;
   flex: 1;
 }
-.menu-item__card .menu-item_price {
+.hcard__info i {
+  margin-right: 1rem;
+}
+.hcard__price {
   flex: 0;
   align-items: flex-end;
 }/*# sourceMappingURL=main.css.map */

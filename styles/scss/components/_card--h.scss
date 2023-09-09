@@ -1,31 +1,55 @@
-@use '../abstracts/' as a;
-.vcard {
-    background-color: a.$background-white;
-    color: a.$text-black;
-	@inlcude a.box-shadow;
-    display: flex;
+@use "../abstracts/" as a;
 
-    &__info {
-        flex: 1;
+.how-to__list {
+	counter-reset: orderedlist;
+	padding: 0;
+}
 
-        .&__title {
+.how-to__hcard {
+	background-color: a.$background-grey;
+	position: relative;
 
-            //! INSERT FONT VALUES
+	&::before {
+		counter-increment: orderedlist;
+		content: counter(orderedlist);
+		@include a.circle(1.25rem, 1.25rem, a.$primary-color);
+		font-size: 0.75rem;
+		line-height: 0.75rem;
+		text-align: center;
+		color: a.$text-white;
+		padding: 0.25rem;
+		position: absolute;
+		left: -0.75rem;
+	}
+}
+.hcard {
+	border-radius: 1rem;
+	color: a.$text-black;
+	@include a.box-shadow;
+	display: flex;
+	align-items: center;
 
-        }
+	&__info {
+		padding: 1.5rem;
+		flex: 1;
 
-        &__desc {
+		i {
+            margin-right: 1rem;
+		}
 
-            //! INSERT FONT VALUES
-        }
+		&__title {
+			//! INSERT FONT VALUES
+		}
 
+		&__desc {
+			//! INSERT FONT VALUES
+		}
+	}
 
-    }
+	&__price {
+		flex: 0;
+		align-items: flex-end;
 
-    &__price {
-        flex: 0;
-        align-items: flex-end;
-
-        //! INSERT FONT VALUES
-    }
+		//! INSERT FONT VALUES
+	}
 }
