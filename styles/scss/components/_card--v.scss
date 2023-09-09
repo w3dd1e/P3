@@ -1,5 +1,5 @@
 @use '../abstracts/' as a;
-.hcard {
+.vcard {
 	background-color: a.$background-white;
 	@include a.box-shadow;
 	border-radius: 1rem;
