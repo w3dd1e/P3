@@ -5,9 +5,8 @@
 	border-radius: 1rem;
 	
 	&__link {
-		display: flex;
+		@include a.flex-center-vert;
 		flex-wrap: wrap;
-		align-items: center;
 	}
 	
 	&__img {
