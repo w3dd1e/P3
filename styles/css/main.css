@@ -130,7 +130,7 @@ body ol, body ul {
 .nav__search .search__form .search__input {
   box-shadow: inset 0px 8px 4px -4px rgba(0, 0, 0, 0.15);
   width: 100%;
-  background-color: #7b7b7b;
+  background-color: #dbdbdb;
   border: none;
   line-height: 3rem;
   text-align: center;
