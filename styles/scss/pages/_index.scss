@@ -3,3 +3,19 @@
 @forward './enchantedplate';
 @forward './fullpalette';
 @forward './gourmand';
+
+body {
+
+    header {
+        padding-top: 1.5rem;
+    }
+     section, footer {
+        padding: 1.5rem;
+
+    }
+    
+    ol, ul {
+        padding: 0;
+    }
+
+}

@@ -48,7 +48,10 @@ body header {
   padding-top: 1.5rem;
 }
 body section, body footer {
-  padding: 1rem;
+  padding: 1.5rem;
+}
+body ol, body ul {
+  padding: 0;
 }
 
 nav {
@@ -63,6 +66,13 @@ nav {
 }
 .footer__link {
   color: #ffffff;
+}
+
+.how-to__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 0.75rem;
 }
 
 .restaurants {
@@ -93,12 +103,12 @@ nav {
   color: #ffffff;
   border-radius: 2rem;
   border: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .vcard {
   background-color: #ffffff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
 }
 .vcard__link {
@@ -124,7 +134,6 @@ nav {
 
 .how-to__list {
   counter-reset: orderedlist;
-  padding: 0;
 }
 
 .how-to__hcard {
@@ -142,15 +151,15 @@ nav {
   line-height: 0.75rem;
   text-align: center;
   color: #ffffff;
-  padding: 0.25rem;
   position: absolute;
-  left: -0.75rem;
+  padding-top: 0.3rem;
+  left: -0.7rem;
 }
 
 .hcard {
   border-radius: 1rem;
   color: #000000;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
 }
@@ -160,6 +169,7 @@ nav {
 }
 .hcard__info i {
   margin-right: 1rem;
+  color: #888888;
 }
 .hcard__price {
   flex: 0;
