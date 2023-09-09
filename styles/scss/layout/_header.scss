@@ -4,7 +4,28 @@
     &__list {
        @include a.flex-center-column;
     }
-	&__logo {
-		align-content: center;
-	}
+	
+
+    &__slogan {
+        background-color: a.$background-medium;
+        align-self: stretch;
+
+        .slogan--big {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .slogan--small {
+            text-align: center;
+
+        }
+    }
+
+    &__button {
+        background-color: a.$background-medium;
+        align-self: stretch;
+        text-align: center;
+
+    }
 }

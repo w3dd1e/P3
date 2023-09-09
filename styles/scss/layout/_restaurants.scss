@@ -1,6 +1,6 @@
 @use '../abstracts' as a;
 .restaurants {
-	background-color: a.$background-grey;
+	background-color: a.$background-medium;
 	@include a.flex-column;
 	
 	&__list {

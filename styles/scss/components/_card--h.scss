@@ -5,7 +5,7 @@
 }
 
 .how-to__hcard {
-	background-color: a.$background-grey;
+	background-color: a.$background-medium;
 	position: relative;
 
 	&::before {
@@ -15,7 +15,7 @@
 		font-size: 0.75rem;
 		line-height: 0.75rem;
 		text-align: center;
-		color: a.$text-white;
+		color: a.$text-light;
 		position: absolute;
 		padding-top: .3rem;
 		left: -0.7rem;
@@ -23,7 +23,7 @@
 }
 .hcard {
 	border-radius: 1rem;
-	color: a.$text-black;
+	color: a.$text-dark;
 	@include a.box-shadow;
 	@include a.flex-center-vert;
 
@@ -33,7 +33,7 @@
 
 		i {
             margin-right: 1rem;
-			color: a.$text-grey;
+			color: a.$text-medium;
 		}
 
 		&__title {

@@ -22,7 +22,7 @@
 		.search__input {
 			@include a.box-shadow--inset;
 			width: 100%;
-			background-color: a.$background-grey;
+			background-color: a.$search-background;
 			border: none;
 			line-height: 3rem;
 			text-align: center;
@@ -30,7 +30,7 @@
 
 			&::placeholder {
 				opacity: 1;
-				color: a.$text-black;
+				color: a.$text-dark;
 			}
 		}
 	}

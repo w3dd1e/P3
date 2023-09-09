@@ -1,6 +1,6 @@
 @use '../abstracts/' as a;
 .vcard {
-	background-color: a.$background-white;
+	background-color: a.$background-light;
 	@include a.box-shadow;
 	border-radius: 1rem;
 	
