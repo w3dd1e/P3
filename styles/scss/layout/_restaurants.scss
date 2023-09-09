@@ -2,6 +2,12 @@
 .restaurants {
 	background-color: a.$background-medium;
 	@include a.flex-column;
+	margin-bottom: 0;
+	padding: 2.5rem 1.5rem;
+
+	&__title {
+		padding: 1rem 0;
+	}
 	
 	&__list {
 		@include a.flex-column;

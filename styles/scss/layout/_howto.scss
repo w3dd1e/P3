@@ -1,7 +1,16 @@
 @use '../abstracts/' as a;
 
-.how-to__list {
-    @include a.flex-column;
-    gap: 1rem;
-    padding-left: .75rem;
+.how-to {
+    padding: 1rem;
+
+    &__title {
+        padding: 1rem 0;
+    }
+
+    &__list {
+        @include a.flex-column;
+        gap: 1rem;
+        padding-left: .75rem;
+    }
 }
+

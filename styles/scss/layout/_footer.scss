@@ -4,8 +4,28 @@
 	background-color: a.$background-dark;
 	color: a.$text-light;
 	@include a.flex-column;
+	margin-top: 0;
+
+	&__title {
+		padding-bottom: 1rem;
+	}
+
+	&__logo {
+		font-family: 'Shrikhand', serif;
+		font-size: 1rem;
+		font-weight: 400;
+	}
 
 	&__link {
 		color: a.$text-light;
+	}
+
+	&__icon {
+		width: .5rem;
+		padding-right: 1.5rem;
+	}
+
+	&__item {
+		line-height: 1.5rem;
 	}
 }
