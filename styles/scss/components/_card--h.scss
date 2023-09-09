@@ -5,16 +5,16 @@
 	@inlcude a.box-shadow;
     display: flex;
 
-    .&__info {
+    &__info {
         flex: 1;
-        
+
         .&__title {
 
             //! INSERT FONT VALUES
 
         }
 
-        .&__desc {
+        &__desc {
 
             //! INSERT FONT VALUES
         }
@@ -22,7 +22,7 @@
 
     }
 
-    .&__price {
+    &__price {
         flex: 0;
         align-items: flex-end;
 
