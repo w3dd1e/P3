@@ -1,11 +1,10 @@
-@use '../abstracts/' as a;
+@use "../abstracts/" as a;
 .button {
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1.5rem;
 	background-color: a.$primary-color;
 	color: a.$text-light;
 	border-radius: 2rem;
 	border: none;
 	@include a.box-shadow;
-
-	
+	@include a.button--gradient;
 }

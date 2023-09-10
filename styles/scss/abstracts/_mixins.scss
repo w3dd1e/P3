@@ -1,5 +1,4 @@
-//Layout Mixins
-
+@use './variables' as v;
 //Breakpoints
 
 @mixin tablet {
@@ -70,3 +69,9 @@
 
 }
 
+//Color Mixins
+
+@mixin button--gradient {
+	background: v.$primary-color;
+	background: linear-gradient(175deg, v.$secondary-color, v.$primary-color);
+}
