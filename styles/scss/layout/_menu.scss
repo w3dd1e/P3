@@ -1,0 +1,41 @@
+@use "../abstracts/" as a;
+
+main {
+	position: relative;
+}
+.menu {
+	border-top-left-radius: a.$border-radius--menu;
+	border-top-right-radius: a.$border-radius--menu;
+	background-color: a.$background-medium;
+	position: relative;
+	top: -5rem;
+	padding-top: 2rem;
+
+	&__header {
+		font-family: "Shrikhand";
+		font-size: 1.5rem;
+        padding: 0 1.5rem;
+        display: flex;
+	}
+
+    section {
+        margin: 0;
+    }
+
+    &__list {
+        @include a.flex-column;
+        gap: 1rem;
+    }
+
+    .list__title {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: a.$text-medium;
+        font-size: 1rem;
+        border-bottom: .2rem solid a.$tertiary-color;
+        margin-bottom: 1rem;
+    }
+
+}
+
+

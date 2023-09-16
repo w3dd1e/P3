@@ -147,6 +147,41 @@ body ol, body ul {
   flex-direction: column;
 }
 
+main {
+  position: relative;
+}
+
+.menu {
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  background-color: #f2f2f2;
+  position: relative;
+  top: -5rem;
+  padding-top: 2rem;
+}
+.menu__header {
+  font-family: "Shrikhand";
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+}
+.menu section {
+  margin: 0;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu .list__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #888888;
+  font-size: 1rem;
+  border-bottom: 0.2rem solid #99ecd0;
+  margin-bottom: 1rem;
+}
+
 .nav__search {
   align-self: stretch;
 }
@@ -193,18 +228,18 @@ body ol, body ul {
   cursor: pointer;
 }
 
-.vcard {
+.card {
   background-color: #ffffff;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
   position: relative;
 }
-.vcard__link {
+.card__link {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.vcard__new {
+.card__new {
   position: absolute;
   top: 5%;
   right: 2.5%;
@@ -213,36 +248,17 @@ body ol, body ul {
   color: #008766;
   font-weight: 700;
 }
-.vcard__img {
+.card__img {
   border-radius: 1rem 1rem 0 0;
   flex: 1 100%;
   object-fit: cover;
   height: 15rem;
 }
-.vcard__info {
+.card__info {
   margin: 1rem;
   display: flex;
   flex-direction: column;
 }
-.vcard__like {
-  font-size: 1.5rem;
-  margin: 1rem 1.5rem 1rem auto;
-  position: relative;
-}
-.vcard__like--fill {
-  position: absolute;
-  top: 0;
-  background: #9356dc;
-  background: linear-gradient(0deg, #ff79da, #9356dc);
-  background-clip: text;
-  color: transparent;
-  scale: 0;
-  transition: scale 500ms ease-out 150ms;
-}
-.vcard__like:hover .vcard__like--fill {
-  scale: 1.03;
-}
-
 .how-to__list {
   counter-reset: orderedlist;
 }
@@ -285,4 +301,24 @@ body ol, body ul {
 .hcard__price {
   flex: 0;
   align-items: flex-end;
+}
+
+.like {
+  font-size: 1.5rem;
+  margin: 1rem 1.5rem 1rem auto;
+  position: relative;
+  cursor: pointer;
+}
+.like--fill {
+  position: absolute;
+  top: 0;
+  background: #9356dc;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
+  scale: 0;
+  transition: scale 500ms ease-out 150ms;
+}
+.like:hover .like--fill {
+  scale: 1.03;
 }/*# sourceMappingURL=main.css.map */
