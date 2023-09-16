@@ -1,5 +1,5 @@
 @use '../abstracts/' as a;
-.vcard {
+.card {
 	background-color: a.$background-light;
 	@include a.box-shadow;
 	border-radius: 1rem;
@@ -43,30 +43,7 @@
 		//!  INSERT FONT VALUES
 	}
 	 
-	&__like {
-		font-size: 1.5rem;
-		margin: 1rem 1.5rem 1rem auto; 
-		position: relative;
 	
-
-		&--fill {
-			position: absolute;
-			top: 0;
-			@include a.gradient-heart;
-			background-clip: text;
-			color: transparent;
-			scale: 0;
-			transition: scale 500ms ease-out 150ms;
-
-			
-
-		}
-
-		&:hover &--fill{
-			scale: 1.03;
-
-		}
 
 
 	}
-}
