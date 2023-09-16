@@ -75,12 +75,17 @@
 
 //Color Mixins
 
-@mixin button--gradient {
+@mixin gradient-button {
 	background: v.$primary-color;
 	background: linear-gradient(175deg, v.$secondary-color, v.$primary-color);
 }
 
-@mixin button--gradient--light {
+@mixin gradient-button--light {
 	background: lighten(v.$primary-color, 4%) ;
 	background: linear-gradient(175deg, lighten(v.$secondary-color,4%), lighten(v.$primary-color, 4%));
+}
+
+@mixin gradient-heart {
+	background: v.$primary-color;
+	background: linear-gradient(0deg, v.$secondary-color, v.$primary-color);
 }
