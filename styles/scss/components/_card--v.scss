@@ -3,10 +3,22 @@
 	background-color: a.$background-light;
 	@include a.box-shadow;
 	border-radius: 1rem;
+	position: relative;
 	
 	&__link {
 		@include a.flex-center-vert;
 		flex-wrap: wrap;
+	}
+
+	&__new {
+		position: absolute;
+		top: 5%;
+		right: 2.5%;
+		background-color: a.$tertiary-color;
+		padding: .25rem 2rem;
+		color: a.$text-new;
+		font-weight: 700;
+
 	}
 	
 	&__img {
