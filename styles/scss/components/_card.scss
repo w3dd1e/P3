@@ -2,7 +2,7 @@
 .card {
 	background-color: a.$background-light;
 	@include a.box-shadow;
-	border-radius: 1rem;
+	border-radius: a.$border-radius--card;
 	position: relative;
 	
 	&__link {

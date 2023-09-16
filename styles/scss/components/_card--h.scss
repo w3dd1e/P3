@@ -22,7 +22,7 @@
 	}
 }
 .hcard {
-	border-radius: 1rem;
+	border-radius: a.$border-radius--card;
 	color: a.$text-dark;
 	@include a.box-shadow;
 	@include a.flex-center-vert;

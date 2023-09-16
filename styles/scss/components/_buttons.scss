@@ -2,7 +2,7 @@
 .button {
 	padding: 0.75rem 1.5rem;
 	color: a.$text-light;
-	border-radius: 2rem;
+	border-radius: a.$border-radius--button;
 	border: none;
 	@include a.box-shadow;
 	@include a.gradient-button;
