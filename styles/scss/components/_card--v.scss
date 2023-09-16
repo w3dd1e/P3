@@ -44,14 +44,14 @@
 			background-clip: text;
 			color: transparent;
 			scale: 0;
-			transition: scale 300ms ease-out;
+			transition: scale 500ms ease-out 150ms;
 
 			
 
 		}
 
 		&:hover &--fill{
-			scale: 1.05;
+			scale: 1.03;
 
 		}
 
