@@ -34,6 +34,27 @@
 	&__like {
 		font-size: 1.5rem;
 		margin: 1rem 1.5rem 1rem auto; 
+		position: relative;
+	
+
+		&--fill {
+			position: absolute;
+			top: 0;
+			@include a.gradient-heart;
+			background-clip: text;
+			color: transparent;
+			scale: 0;
+			transition: scale 300ms ease-out;
+
+			
+
+		}
+
+		&:hover &--fill{
+			scale: 1.05;
+
+		}
+
 
 	}
 }

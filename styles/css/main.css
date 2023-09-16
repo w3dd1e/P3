@@ -217,6 +217,20 @@ body ol, body ul {
 .vcard__like {
   font-size: 1.5rem;
   margin: 1rem 1.5rem 1rem auto;
+  position: relative;
+}
+.vcard__like--fill {
+  position: absolute;
+  top: 0;
+  background: #9356dc;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
+  scale: 0;
+  transition: scale 300ms ease-out;
+}
+.vcard__like:hover .vcard__like--fill {
+  scale: 1.05;
 }
 
 .how-to__list {
