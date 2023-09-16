@@ -5,11 +5,11 @@
 	border-radius: 2rem;
 	border: none;
 	@include a.box-shadow;
-	@include a.button--gradient;
+	@include a.gradient-button;
 
 	&:hover {
 		@include a.box-shadow--dark;
-		@include a.button--gradient--light;
+		@include a.gradient-button--light;
 		cursor: pointer;
 		
 
