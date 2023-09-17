@@ -373,9 +373,19 @@ main {
   color: transparent;
   scale: 0;
   transition: scale 500ms ease-out 150ms;
+  z-index: 0;
 }
 .like:hover .like--fill {
-  scale: 1.03;
+  scale: 1;
+}
+.like--empty {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 150ms ease-in 400ms;
+}
+.like:hover .like--empty {
+  opacity: 0;
 }
 
 .card--menu {
