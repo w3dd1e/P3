@@ -250,7 +250,7 @@ main {
 }
 .card__img {
   border-radius: 1rem 1rem 0 0;
-  flex: 1 100%;
+  flex: 1 80%;
   object-fit: cover;
   height: 15rem;
 }
@@ -259,6 +259,33 @@ main {
   display: flex;
   flex-direction: column;
 }
+.card__price {
+  margin: auto 1.5rem 1rem auto;
+}
+.card__add {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #99ecd0;
+  color: #ffffff;
+  align-self: stretch;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.375rem 0;
+  width: 0;
+  overflow: hidden;
+  transition: width 300ms ease-out 100ms;
+}
+.card .fa-circle-check {
+  transform: rotate(360deg);
+  transition: transform 400ms ease-out 200ms;
+}
+.card:hover .fa-circle-check {
+  transform: rotate(0deg);
+}
+.card:hover .card__add {
+  width: 15%;
+}
+
 .how-to__list {
   counter-reset: orderedlist;
 }
