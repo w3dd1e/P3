@@ -8,6 +8,7 @@
 	&__link {
 		@include a.flex-center-vert;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__new {
@@ -30,14 +31,22 @@
 	&__info {
 		margin: 1rem;
 		@include a.flex-column;
+		overflow: hidden;
+		flex: 1;
 	}
 
 	&__title {
 		//!  INSERT FONT VALUES
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
-	&__location {
+	&__description {
 		//!  INSERT FONT VALUES
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	&__price {
@@ -64,11 +73,10 @@
 	}
 
 	&:hover .fa-circle-check {
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 
 	&:hover &__add {
 		width: 15%;
-		
-}
+	}
 }
