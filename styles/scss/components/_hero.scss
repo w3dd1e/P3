@@ -1,0 +1,25 @@
+@use "../abstracts/" as a;
+
+.hero {
+	background-image: url(../../images/restaurants/bastille.jpg);
+background-size: cover;  
+background-position: 50% 80%;    
+background-repeat: no-repeat;
+height: 20rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.menu__header {
+	border-top-left-radius: a.$border-radius--menu;
+	border-top-right-radius: a.$border-radius--menu;
+	background-color: a.$background-medium;
+	width: 100%;
+	position: relative;
+	font-family: "Shrikhand";
+	font-size: 1.3rem;
+	padding: 1.5rem 1.5rem 0 1.5rem;
+	display: flex;
+    align-items: center;
+   
+}
