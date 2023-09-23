@@ -55,7 +55,7 @@ ul {
   }
 }
 header, section, footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 body section, body footer {
@@ -70,9 +70,20 @@ body ol, body ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .nav__logo {
-  padding-bottom: 1rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav__logo__link {
+  margin: 0 auto;
+}
+.nav__logo .placeholder {
+  visibility: hidden;
 }
 .nav__slogan {
   background-color: #f2f2f2;
