@@ -58,8 +58,12 @@ header, section, footer {
   margin-top: 1rem;
 }
 
+body, html {
+  height: 100%;
+}
+
 body section, body footer {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 body ol, body ul {
   padding: 0;
@@ -173,18 +177,7 @@ main {
 }
 
 .menu {
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
   background-color: #f2f2f2;
-  position: relative;
-  top: -5rem;
-  padding-top: 2rem;
-}
-.menu__header {
-  font-family: "Shrikhand";
-  font-size: 1.5rem;
-  padding: 0 1.5rem;
-  display: flex;
 }
 .menu section {
   margin: 0;
@@ -246,12 +239,19 @@ main {
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
   background: #9356dc;
   background: linear-gradient(175deg, #ff79da, #9356dc);
+  display: inline-block;
+  width: 14rem;
 }
 .button:hover {
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
   background: #9e67e0;
   background: linear-gradient(175deg, #ff8de0, #9e67e0);
   cursor: pointer;
+}
+.button__container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .card {
@@ -371,7 +371,8 @@ main {
 
 .like {
   font-size: 1.5rem;
-  margin: 1rem 1.5rem 1rem auto;
+  margin-right: 1.5rem;
+  margin-left: auto;
   position: relative;
   cursor: pointer;
 }
@@ -416,4 +417,27 @@ main {
 
 .card--menu:nth-child(3) {
   animation-delay: 900ms;
+}
+
+.hero {
+  background-image: url(../../images/restaurants/bastille.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  height: 20rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu__header {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background-color: #f2f2f2;
+  width: 100%;
+  position: relative;
+  font-family: "Shrikhand";
+  font-size: 1.3rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

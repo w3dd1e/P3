@@ -6,14 +6,18 @@
 	border: none;
 	@include a.box-shadow;
 	@include a.gradient-button;
-
+	display: inline-block;
+width: 14rem;
 	&:hover {
 		@include a.box-shadow--dark;
 		@include a.gradient-button--light;
 		cursor: pointer;
 		
+	}
 
-
-
+	&__container {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 4rem;
 	}
 }
