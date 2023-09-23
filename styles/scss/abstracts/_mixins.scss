@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use "./variables" as v;
 //Breakpoints
 
 @mixin tablet {
@@ -18,8 +18,6 @@
 		@content;
 	}
 }
-
-
 
 //Circle Element
 
@@ -61,16 +59,22 @@
 // Box Shadow
 
 @mixin box-shadow {
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 @mixin box-shadow--dark {
-	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 @mixin box-shadow--inset {
-	box-shadow: inset 0px 8px 4px -4px rgba(0,0,0,0.15);
+	box-shadow: inset 0px 8px 4px -4px rgba(0, 0, 0, 0.15);
+}
 
+@mixin box-shadow--loading {
+	box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.35);}
+
+@mixin box-shadow--loading-inset {
+	box-shadow: inset 3px 5px 7px 2px rgba(0,0,0,0.35);
 }
 
 //Color Mixins
@@ -81,11 +85,19 @@
 }
 
 @mixin gradient-button--light {
-	background: lighten(v.$primary-color, 4%) ;
-	background: linear-gradient(175deg, lighten(v.$secondary-color,4%), lighten(v.$primary-color, 4%));
+	background: lighten(v.$primary-color, 4%);
+	background: linear-gradient(
+		175deg,
+		lighten(v.$secondary-color, 4%),
+		lighten(v.$primary-color, 4%)
+	);
 }
 
 @mixin gradient-heart {
 	background: v.$primary-color;
 	background: linear-gradient(0deg, v.$secondary-color, v.$primary-color);
 }
+
+@mixin gradient-loading {
+	background: v.$primary-color;
+	background: linear-gradient(90deg, rgba(147,86,220,1) 0%, rgba(147,86,220,1) 75%, rgba(255,121,218,1) 100%); }
