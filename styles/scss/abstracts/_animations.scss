@@ -10,3 +10,24 @@
 		translate: 0 0;
 	}
 }
+
+@keyframes loadingCircle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		visibility: hidden;
+	}
+}
+
+@keyframes hideObject{
+	0% {
+		visibility: visible;
+	}
+
+	100% {
+		visibility: hidden;
+	}
+}
