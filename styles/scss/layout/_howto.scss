@@ -12,5 +12,22 @@
         gap: 1rem;
         padding-left: .75rem;
     }
+
+   
 }
 
+@include a.tablet {
+
+    .how-to {
+        
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+    
+       
+    }
+
+}

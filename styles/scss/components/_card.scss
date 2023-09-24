@@ -80,3 +80,17 @@
 		width: 15%;
 	}
 }
+
+@include a.tablet {
+	.card {
+		
+		&__title {
+			font-size: 1rem;
+
+		}
+
+		&__add {
+			font-size: 1rem;
+		}
+	}
+}

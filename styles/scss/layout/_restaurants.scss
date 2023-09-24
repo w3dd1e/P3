@@ -1,4 +1,4 @@
-@use '../abstracts' as a;
+@use "../abstracts" as a;
 .restaurants {
 	background-color: a.$background-medium;
 	@include a.flex-column;
@@ -8,19 +8,52 @@
 	&__title {
 		padding: 1rem 0;
 	}
-	
+
 	&__list {
 		@include a.flex-column;
 		gap: 1rem;
-		
 	}
-	
+
 	&__link {
 		flex: 1;
 		@include a.flex-column;
-		
 	}
-	
+}
 
-	
+@include a.tablet {
+	.restaurants {
+		padding: 1rem 1.5rem;
+		&__list {
+			display: flex;
+			flex-direction: row;
+		}
+		&__card {
+			flex: 1 25%;
+			max-width: 25%;
+			min-width: 0;
+			display: flex;
+
+			.card__link {
+				justify-content: flex-start;
+				position: relative;
+			}
+
+			.card__like {
+				position: absolute;
+				bottom: .5rem;
+				right: 1rem;
+				margin: 0;
+			}
+			.card__title {
+				font-size: .9rem;
+			}
+			.card__location {
+				font-size: .9rem;
+			}
+			.like__{
+				font-size: .9rem;
+			}
+
+		}
+	}
 }

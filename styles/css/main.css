@@ -75,8 +75,8 @@ header, section, footer {
   margin-top: 1rem;
 }
 
-body, html {
-  height: 100%;
+body {
+  height: fit-content;
 }
 
 body section, body footer {
@@ -101,7 +101,11 @@ body main {
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+}
+.nav__logo__back {
+  font-size: 1.5rem;
 }
 .nav__logo__link {
   margin: 0 auto;
@@ -132,6 +136,15 @@ body main {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav__logo {
+    margin-right: auto;
+  }
+}
 .footer {
   background-color: #404040;
   color: #ffffff;
@@ -171,6 +184,13 @@ body main {
   padding-left: 0.75rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .how-to__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 .restaurants {
   background-color: #f2f2f2;
   display: flex;
@@ -192,6 +212,40 @@ body main {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurants {
+    padding: 1rem 1.5rem;
+  }
+  .restaurants__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .restaurants__card {
+    flex: 1 25%;
+    max-width: 25%;
+    min-width: 0;
+    display: flex;
+  }
+  .restaurants__card .card__link {
+    justify-content: flex-start;
+    position: relative;
+  }
+  .restaurants__card .card__like {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    margin: 0;
+  }
+  .restaurants__card .card__title {
+    font-size: 0.9rem;
+  }
+  .restaurants__card .card__location {
+    font-size: 0.9rem;
+  }
+  .restaurants__card .like__ {
+    font-size: 0.9rem;
+  }
+}
 main {
   position: relative;
 }
@@ -221,6 +275,16 @@ main {
   width: 2.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .menu {
+    width: 50%;
+    margin: auto;
+    box-shadow: 10px 0px 15px -3px rgba(0, 0, 0, 0.1), -10px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .menu section {
+    margin: auto;
+  }
+}
 .nav__search {
   align-self: stretch;
 }
@@ -345,6 +409,14 @@ main {
   width: 15%;
 }
 
+@media only screen and (min-width: 768px) {
+  .card__title {
+    font-size: 1rem;
+  }
+  .card__add {
+    font-size: 1rem;
+  }
+}
 .how-to__list {
   counter-reset: orderedlist;
 }
@@ -384,11 +456,14 @@ main {
   margin-right: 1rem;
   color: #888888;
 }
-.hcard__price {
-  flex: 0;
-  align-items: flex-end;
+@media only screen and (min-width: 768px) {
+  .hcard {
+    flex: 1 30%;
+  }
+  .hcard__info {
+    text-align: center;
+  }
 }
-
 .like {
   font-size: 1.5rem;
   margin-right: 1.5rem;
@@ -462,6 +537,17 @@ main {
   align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 30rem;
+  }
+  .menu__header {
+    width: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .loading__container {
   width: 100%;
   height: 120%;
@@ -514,4 +600,11 @@ main {
   background: transparent;
   top: 5rem;
   box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (min-width: 768px) {
+  .loading__container {
+    top: 0rem;
+    height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

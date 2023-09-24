@@ -5,8 +5,6 @@ main {
 }
 .menu {
 	background-color: a.$background-medium;
-	
-
 
 	section {
 		margin: 0;
@@ -29,6 +27,18 @@ main {
 			display: block;
 			border-bottom: 0.2rem solid a.$tertiary-color;
 			width: 2.5rem;
+		}
+	}
+}
+@include a.tablet {
+	.menu {
+		width: 50%;
+		margin: auto;
+
+		@include a.box-shadow--sides;
+
+		section {
+			margin: auto;
 		}
 	}
 }

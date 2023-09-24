@@ -17,7 +17,7 @@
 		text-align: center;
 		color: a.$text-light;
 		position: absolute;
-		padding-top: .3rem;
+		padding-top: 0.3rem;
 		left: -0.7rem;
 	}
 }
@@ -32,7 +32,7 @@
 		flex: 1;
 
 		i {
-            margin-right: 1rem;
+			margin-right: 1rem;
 			color: a.$text-medium;
 		}
 
@@ -44,11 +44,12 @@
 			//! INSERT FONT VALUES
 		}
 	}
+}
 
-	&__price {
-		flex: 0;
-		align-items: flex-end;
-
-		//! INSERT FONT VALUES
+@include a.tablet {
+	.hcard {
+		flex: 1 30%;
+		&__info {
+text-align: center;		}
 	}
 }
