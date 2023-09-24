@@ -2,19 +2,19 @@
 //Breakpoints
 
 @mixin tablet {
-	@media only screen and (min-width: $tablet * 1px) {
+	@media only screen and (min-width: v.$tablet * 1px) {
 		@content;
 	}
 }
 
 @mixin large {
-	@media only screen and (min-width: $large * 1px) {
+	@media only screen and (min-width: v.$large * 1px) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media only screen and (min-width: $desktop * 1px) {
+	@media only screen and (min-width: v.$desktop * 1px) {
 		@content;
 	}
 }
@@ -69,6 +69,22 @@
 @mixin box-shadow--inset {
 	box-shadow: inset 0px 8px 4px -4px rgba(0, 0, 0, 0.15);
 }
+
+@mixin box-shadow--left {
+	box-shadow: -10px 0px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+@mixin box-shadow--right {
+	box-shadow: 10px 0px 15px -3px rgba(0,0,0,0.1);
+}
+
+@mixin box-shadow--sides {
+	box-shadow: 10px 0px 15px -3px rgba(0,0,0,0.1), -10px 0px 15px -3px rgba(0,0,0,0.1);
+
+
+}
+
 
 @mixin box-shadow--loading {
 	box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.35);}
