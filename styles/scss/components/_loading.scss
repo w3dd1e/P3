@@ -1,48 +1,51 @@
 @use "../abstracts/" as a;
 
 .loading__container {
-    width: 100%;
-    height: 120%;
-    background-color: a.$background-light;
-    position: absolute;
-    z-index: 1000;
-    @include a.flex-column;
-    align-items: center;
-    padding-top: 5rem;
-    top: -21rem;
-   animation-name: hideObject;
-   animation-duration: 0s;
-   animation-delay: 3.5s;
-   animation-fill-mode: forwards;
-
+	width: 100%;
+	height: 120%;
+	background-color: a.$background-light;
+	position: absolute;
+	z-index: 1000;
+	@include a.flex-column;
+	align-items: center;
+	padding-top: 5rem;
+	top: -21rem;
+	animation-name: hideObject;
+	animation-duration: 0s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
 }
-.loading__border{
-    @include a.circle (6rem, 6rem, none);
-    @include a.gradient-loading ;
-    animation-name: loadingCircle;
-    animation-duration: 1s;
-    animation-delay: 500ms;
-    animation-iteration-count: 3;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    opacity: .8;
-
-
-    
+.loading__border {
+	@include a.circle(6rem, 6rem, none);
+	@include a.gradient-loading;
+	animation-name: loadingCircle;
+	animation-duration: 1s;
+	animation-delay: 500ms;
+	animation-iteration-count: 3;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0.8;
 }
-.loading__circle{
-    background-color: a.$primary-color;
-    @include a.circle(4.5rem, 4.5rem, a.$background-medium);
-    position: relative;
-    top: -5.25rem;
-    @include a.box-shadow--loading-inset;
+.loading__circle {
+	background-color: a.$primary-color;
+	@include a.circle(4.5rem, 4.5rem, a.$background-medium);
+ 
 
-
+	position: relative;
+	top: -5.25rem;
+	@include a.box-shadow--loading-inset;
 }
 
-.loading__shadow{
-    position: absolute;
-    @include a.circle (6rem, 6rem, transparent);
-    top: 5rem;
-    @include a.box-shadow--loading;
+.loading__shadow {
+	position: absolute;
+	@include a.circle(6rem, 6rem, transparent);
+	top: 5rem;
+	@include a.box-shadow--loading;
+}
+
+@include a.tablet {
+	.loading__container {
+		top: 0rem;
+        height: 100%;
+	}
 }
