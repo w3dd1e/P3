@@ -282,10 +282,11 @@ body main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .restaurants__card {
     flex: 1 50%;
-    max-width: 49%;
+    max-width: 47%;
     min-width: 0;
     display: flex;
   }
