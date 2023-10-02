@@ -83,7 +83,7 @@ footer {
     justify-content: center;
     gap: 3rem;
     padding: 1rem 3rem 2rem 3rem;
-    max-width: 2200px;
+    max-width: 1920px;
     margin: auto;
   }
   main section {
@@ -238,8 +238,10 @@ body main {
 @media only screen and (min-width: 1280px) {
   .how-to {
     flex: 1 15%;
+    margin-top: 0;
     margin-left: auto;
     min-width: 20.6rem;
+    padding: 0;
   }
   .how-to__list {
     display: flex;
@@ -290,11 +292,11 @@ body main {
     min-width: 0;
     display: flex;
   }
-  .restaurants__card .card__link {
+  .restaurants .card__link {
     justify-content: flex-start;
     position: relative;
   }
-  .restaurants__card .card__like {
+  .restaurants .card__like {
     position: absolute;
     bottom: 0.5rem;
     right: 1rem;
@@ -315,6 +317,11 @@ body main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2rem;
+  }
+  .restaurants__card {
+    flex: 1 50%;
+    max-width: 40%;
+    min-width: 0;
   }
 }
 main {
