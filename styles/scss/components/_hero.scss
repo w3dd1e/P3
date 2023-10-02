@@ -10,6 +10,12 @@
 	align-items: flex-end;
 }
 
+@each $name, $value in a.$background-img {
+	.hero--#{$name} {
+		background-image: $value;
+	}
+}
+
 .menu__header {
 	border-top-left-radius: a.$border-radius--menu;
 	border-top-right-radius: a.$border-radius--menu;

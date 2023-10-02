@@ -3,7 +3,6 @@ $tablet: 768;
 $large: 1024;
 $desktop: 1280;
 
-//Breakpoints Map
 
 // Color Variables
 $primary-color: #9356dc;
@@ -18,7 +17,6 @@ $text-medium: #888888;
 $text-new: #008766;
 $search-background: #dbdbdb;
 
-//Color Maps
 
 
 //Margin, Padding, Border Variables
@@ -26,3 +24,13 @@ $search-background: #dbdbdb;
 $border-radius--card: 1rem;
 $border-radius--button: 2rem;
 $border-radius--menu: 3rem;
+
+//Hero Background Image Maps
+
+$background-img: (
+    bastille: url(../../images/restaurants/bastille.jpg),
+    palette:  url(../../images/restaurants/full-palette.jpg),
+    gourmand:  url(../../images/restaurants/le-gourmand.jpg),
+    enchanted: url(../../images/restaurants/enchanted-plate.jpg)
+
+);

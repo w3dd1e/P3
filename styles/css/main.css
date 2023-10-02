@@ -636,6 +636,22 @@ main {
   align-items: flex-end;
 }
 
+.hero--bastille {
+  background-image: url(../../images/restaurants/bastille.jpg);
+}
+
+.hero--palette {
+  background-image: url(../../images/restaurants/full-palette.jpg);
+}
+
+.hero--gourmand {
+  background-image: url(../../images/restaurants/le-gourmand.jpg);
+}
+
+.hero--enchanted {
+  background-image: url(../../images/restaurants/enchanted-plate.jpg);
+}
+
 .menu__header {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
