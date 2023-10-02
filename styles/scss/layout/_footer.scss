@@ -30,6 +30,11 @@
 	}
 }
 
+@include a.tablet {
+	.footer__list {
+		margin: auto;
+	}
+}
 @include a.desktop {
 
 .footer__list {
