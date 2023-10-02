@@ -2,14 +2,14 @@
 
 .loading__container {
 	width: 100%;
-	height: 120%;
+	height: 100%;
 	background-color: a.$background-light;
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 	@include a.flex-column;
 	align-items: center;
 	padding-top: 5rem;
-	top: -21rem;
+	top: 0rem;
 	animation-name: hideObject;
 	animation-duration: 0s;
 	animation-delay: 3.5s;
@@ -43,9 +43,3 @@
 	@include a.box-shadow--loading;
 }
 
-@include a.tablet {
-	.loading__container {
-		top: 0rem;
-        height: 100%;
-	}
-}
