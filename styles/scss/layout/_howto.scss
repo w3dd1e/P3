@@ -1,7 +1,7 @@
 @use '../abstracts/' as a;
 
 .how-to {
-    padding: 1rem;
+    padding: 1.5rem;
 
     &__title {
         padding: 1rem 0;
@@ -19,6 +19,7 @@
 @include a.tablet {
 
     .how-to {
+        margin: 2rem 0;
         
     
         &__list {

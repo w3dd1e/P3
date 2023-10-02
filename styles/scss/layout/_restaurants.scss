@@ -24,15 +24,22 @@
 
 @include a.tablet {
 	.restaurants {
-		padding: 1rem 1.5rem;
+		padding-top: 1rem;
+		padding-bottom: 5rem;
+
+		&__title {
+		
+			padding-bottom: 2rem;
+		}
 
 		&__list {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 		}
 		&__card {
-			flex: 1 25%;
-			max-width: 25%;
+			flex: 1 50%;
+			max-width: 49%;
 			min-width: 0;
 			display: flex;
 
@@ -56,6 +63,7 @@
 		}
 	}
 }
+
 
 @include a.desktop {
 	.restaurants {

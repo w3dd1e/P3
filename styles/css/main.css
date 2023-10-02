@@ -195,8 +195,25 @@ body main {
   line-height: 1.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer__list {
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__list {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footer__title {
+    padding: 0;
+  }
+}
 .how-to {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .how-to__title {
   padding: 1rem 0;
@@ -209,6 +226,9 @@ body main {
 }
 
 @media only screen and (min-width: 768px) {
+  .how-to {
+    margin: 2rem 0;
+  }
   .how-to__list {
     display: flex;
     flex-direction: row;
@@ -252,15 +272,20 @@ body main {
 
 @media only screen and (min-width: 768px) {
   .restaurants {
-    padding: 1rem 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+  .restaurants__title {
+    padding-bottom: 2rem;
   }
   .restaurants__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .restaurants__card {
-    flex: 1 25%;
-    max-width: 25%;
+    flex: 1 50%;
+    max-width: 49%;
     min-width: 0;
     display: flex;
   }
