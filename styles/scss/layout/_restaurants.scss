@@ -44,6 +44,7 @@
 			min-width: 0;
 			display: flex;
 
+		}
 			.card__link {
 				justify-content: flex-start;
 				position: relative;
@@ -55,15 +56,9 @@
 				right: 1rem;
 				margin: 0;
 			}
-			.card__title {
-			}
-			.card__location {
-			}
-			.like__ {
-			}
-		}
-	}
-}
+		
+}}
+	
 
 
 @include a.desktop {
@@ -81,5 +76,10 @@
 			justify-content: space-evenly;
 			gap: 2rem;
 		}
+		&__card {
+			flex: 1 50%;
+			max-width: 40%;
+			min-width: 0;
 	}
+}
 }
