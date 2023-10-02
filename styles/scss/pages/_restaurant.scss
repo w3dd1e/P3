@@ -1,10 +1,7 @@
 @use "../abstracts" as a;
 
-
-
-@include a.desktop {
-    main {
-    width: 100%;
+.restaurant-page {
+    display: block;
+    max-width: 100%;
+    padding: 0;
 }
-}
-

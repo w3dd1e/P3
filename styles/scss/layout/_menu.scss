@@ -48,6 +48,11 @@ main {
 		width: 75%;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+
+		& section {
+			flex: 1 30%;
+		}
 
 		&__list {
 			flex-basis: 30%;

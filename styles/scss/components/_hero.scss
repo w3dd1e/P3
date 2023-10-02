@@ -2,10 +2,10 @@
 
 .hero {
 	background-image: url(../../images/restaurants/bastille.jpg);
-background-size: cover;  
-background-position: 50% 80%;    
-background-repeat: no-repeat;
-height: 20rem;
+	background-size: cover;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	height: 20rem;
 	display: flex;
 	align-items: flex-end;
 }
@@ -20,20 +20,29 @@ height: 20rem;
 	font-size: 1.3rem;
 	padding: 1.5rem 1.5rem 0 1.5rem;
 	display: flex;
-    align-items: center;
-   
+	align-items: center;
 }
 
-
 @include a.tablet {
-
 	.hero {
 		height: 30rem;
 		width: 100%;
 	}
-	.menu__header{
-	width: 50%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-}}
+	.menu__header {
+		width: 50%;
+		margin-top: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@include a.desktop {
+	.hero {
+		height: 30rem;
+		width: 100%;
+	}
+	.menu__header {
+		width: 75%;
+	
+	}
+}
