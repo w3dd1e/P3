@@ -42,3 +42,14 @@ main {
 		}
 	}
 }
+
+@include a.desktop {
+	.menu {
+		width: 75%;
+		display: flex;
+		flex-wrap: wrap;
+
+		&__list {
+			flex-basis: 30%;
+	}
+}}

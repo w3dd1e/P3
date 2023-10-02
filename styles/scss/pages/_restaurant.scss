@@ -1,4 +1,10 @@
-body {
-    height: fit-content;
+@use "../abstracts" as a;
+
+
+
+@include a.desktop {
+    main {
+    width: 100%;
+}
 }
 

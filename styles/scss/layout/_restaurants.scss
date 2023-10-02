@@ -7,11 +7,13 @@
 
 	&__title {
 		padding: 1rem 0;
+		flex: 1;
 	}
 
 	&__list {
 		@include a.flex-column;
 		gap: 1rem;
+		flex: 1;
 	}
 
 	&__link {
@@ -23,6 +25,7 @@
 @include a.tablet {
 	.restaurants {
 		padding: 1rem 1.5rem;
+
 		&__list {
 			display: flex;
 			flex-direction: row;
@@ -40,20 +43,34 @@
 
 			.card__like {
 				position: absolute;
-				bottom: .5rem;
+				bottom: 0.5rem;
 				right: 1rem;
 				margin: 0;
 			}
 			.card__title {
-				font-size: .9rem;
 			}
 			.card__location {
-				font-size: .9rem;
 			}
-			.like__{
-				font-size: .9rem;
+			.like__ {
 			}
+		}
+	}
+}
 
+@include a.desktop {
+	.restaurants {
+		margin-right: auto;
+		flex: 2 65%;
+		padding-bottom: 2rem;
+		border-radius: a.$border-radius--card;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		&__list {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			gap: 2rem;
 		}
 	}
 }

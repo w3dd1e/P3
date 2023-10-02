@@ -31,3 +31,19 @@
     }
 
 }
+
+@include a.desktop {
+
+    .how-to {
+        flex: 1 15%;
+        margin-left: auto;
+        min-width: 20.6rem;
+   &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    }
+
+}

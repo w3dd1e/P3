@@ -1,3 +1,20 @@
-header, section, footer {
-    margin-top: 1rem;
+@use "../abstracts" as a;
+header,
+section,
+footer {
+	margin-top: 1rem;
+}
+
+@include a.desktop {
+	main {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		padding: 1rem 3rem 2rem 3rem;
+max-width: 2200px;
+margin: auto;
+		section {
+			margin: 0;
+		}
+	}
 }

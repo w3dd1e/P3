@@ -1,89 +1,80 @@
 @use "../abstracts" as a;
 
 .nav {
-    &__list {
-       @include a.flex-center-column;
-       flex-wrap: wrap;
+	&__list {
+		@include a.flex-center-column;
+		flex-wrap: wrap;
+	}
 
-      
-    }
+	&__logo {
+		text-align: center;
+		padding: 1rem 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 
-  
-    &__logo{
-        text-align: center;
-       padding: 1rem 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+		&__back {
+			font-size: 1.5rem;
+		}
 
-        &__back {
-            font-size: 1.5rem;
-        }
+		&__link {
+			margin: 0 auto;
+		}
 
+		.placeholder {
+			visibility: hidden;
+		}
+	}
 
-       
-        &__link {
-            margin: 0 auto;
+	&__slogan {
+		background-color: a.$background-medium;
+		align-self: stretch;
 
-        }
+		.slogan--big {
+			padding-top: 2.5rem;
+			font-size: 1.5rem;
+			font-weight: 700;
+			text-align: center;
+		}
 
-        .placeholder {
-            visibility: hidden;
-        }
-    }
-	
+		.slogan--small {
+			font-size: 1.15rem;
+			padding: 1.5rem 3rem;
+			text-align: center;
+			color: a.$text-medium;
+		}
+	}
 
-    &__slogan {
-        background-color: a.$background-medium;
-        align-self: stretch;
-        
-
-
-        .slogan--big {
-            padding-top: 2.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .slogan--small {
-            font-size: 1.15rem;
-            padding: 1.5rem 3rem;
-            text-align: center;
-            color: a.$text-medium;
-
-        }
-    }
-
-    &__button {
-        padding-bottom: 2.5rem;
-        background-color: a.$background-medium;
-        align-self: stretch;
-        text-align: center;
-
-    }
+	&__button {
+		padding-bottom: 2.5rem;
+		background-color: a.$background-medium;
+		align-self: stretch;
+		text-align: center;
+	}
 }
 
-
 @include a.tablet {
-    
-    .nav {
-        &__list {
-           display: flex;
-           flex-wrap: nowrap;
-              
-        }
-    
-      
-        &__logo{
-           
-            margin-right: auto;
-    
-        }           
-        
-    
-           
-    
-    }
+	.nav {
+		&__list {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+
+		&__logo {
+			margin-right: auto;
+		}
+	}
+}
+
+@include a.desktop {
+	.nav {
+		&__slogan {
+			background-color: a.$background-light;
+		}
+
+		&__button {
+			background-color: a.$background-light;
+		}
+	}
 }

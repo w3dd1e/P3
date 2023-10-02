@@ -53,3 +53,11 @@
 text-align: center;		}
 	}
 }
+
+@include a.desktop {
+	.hcard {
+		&__info {
+		text-align: left;
+	}
+}
+}
