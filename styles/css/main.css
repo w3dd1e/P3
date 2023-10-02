@@ -96,10 +96,12 @@ footer {
   padding: 0;
 }
 
-body section, body footer {
+body section,
+body footer {
   padding: 1rem;
 }
-body ol, body ul {
+body ol,
+body ul {
   padding: 0;
 }
 body main {
@@ -563,6 +565,7 @@ main {
   margin-right: 1rem;
   color: #888888;
 }
+
 @media only screen and (min-width: 768px) {
   .hcard {
     flex: 1 30%;

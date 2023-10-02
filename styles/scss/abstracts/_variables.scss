@@ -3,7 +3,6 @@ $tablet: 768;
 $large: 1024;
 $desktop: 1280;
 
-
 // Color Variables
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
@@ -17,8 +16,6 @@ $text-medium: #888888;
 $text-new: #008766;
 $search-background: #dbdbdb;
 
-
-
 //Margin, Padding, Border Variables
 
 $border-radius--card: 1rem;
@@ -28,9 +25,8 @@ $border-radius--menu: 3rem;
 //Hero Background Image Maps
 
 $background-img: (
-    bastille: url(../../images/restaurants/bastille.jpg),
-    palette:  url(../../images/restaurants/full-palette.jpg),
-    gourmand:  url(../../images/restaurants/le-gourmand.jpg),
-    enchanted: url(../../images/restaurants/enchanted-plate.jpg)
-
+	bastille: url(../../images/restaurants/bastille.jpg),
+	palette: url(../../images/restaurants/full-palette.jpg),
+	gourmand: url(../../images/restaurants/le-gourmand.jpg),
+	enchanted: url(../../images/restaurants/enchanted-plate.jpg),
 );

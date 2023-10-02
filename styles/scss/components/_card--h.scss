@@ -35,14 +35,6 @@
 			margin-right: 1rem;
 			color: a.$text-medium;
 		}
-
-		&__title {
-			//! INSERT FONT VALUES
-		}
-
-		&__desc {
-			//! INSERT FONT VALUES
-		}
 	}
 }
 
@@ -50,14 +42,15 @@
 	.hcard {
 		flex: 1 30%;
 		&__info {
-text-align: center;		}
+			text-align: center;
+		}
 	}
 }
 
 @include a.desktop {
 	.hcard {
 		&__info {
-		text-align: left;
+			text-align: left;
+		}
 	}
-}
 }

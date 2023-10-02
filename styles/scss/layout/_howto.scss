@@ -1,52 +1,42 @@
-@use '../abstracts/' as a;
+@use "../abstracts/" as a;
 
 .how-to {
-    padding: 1.5rem;
+	padding: 1.5rem;
 
-    &__title {
-        padding: 1rem 0;
-    }
+	&__title {
+		padding: 1rem 0;
+	}
 
-    &__list {
-        @include a.flex-column;
-        gap: 1rem;
-        padding-left: .75rem;
-    }
-
-   
+	&__list {
+		@include a.flex-column;
+		gap: 1rem;
+		padding-left: 0.75rem;
+	}
 }
 
 @include a.tablet {
+	.how-to {
+		margin: 2rem 0;
 
-    .how-to {
-        margin: 2rem 0;
-        
-    
-        &__list {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-        }
-    
-       
-    }
-
+		&__list {
+			display: flex;
+			flex-direction: row;
+			gap: 2rem;
+		}
+	}
 }
 
 @include a.desktop {
-
-    .how-to {
-        flex: 1 15%;
-        margin-top: 0;
-        margin-left: auto;
-        min-width: 20.6rem;
-        padding: 0;
-   &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    }
-
+	.how-to {
+		flex: 1 15%;
+		margin-top: 0;
+		margin-left: auto;
+		min-width: 20.6rem;
+		padding: 0;
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
 }

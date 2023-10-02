@@ -71,26 +71,24 @@
 }
 
 @mixin box-shadow--left {
-	box-shadow: -10px 0px 15px -3px rgba(0,0,0,0.1);
+	box-shadow: -10px 0px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-
 @mixin box-shadow--right {
-	box-shadow: 10px 0px 15px -3px rgba(0,0,0,0.1);
+	box-shadow: 10px 0px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 @mixin box-shadow--sides {
-	box-shadow: 10px 0px 15px -3px rgba(0,0,0,0.1), -10px 0px 15px -3px rgba(0,0,0,0.1);
-
-
+	box-shadow: 10px 0px 15px -3px rgba(0, 0, 0, 0.1),
+		-10px 0px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-
 @mixin box-shadow--loading {
-	box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.35);}
+	box-shadow: 3px 5px 7px 0px rgba(0, 0, 0, 0.35);
+}
 
 @mixin box-shadow--loading-inset {
-	box-shadow: inset 3px 5px 7px 2px rgba(0,0,0,0.35);
+	box-shadow: inset 3px 5px 7px 2px rgba(0, 0, 0, 0.35);
 }
 
 //Color Mixins
@@ -116,4 +114,10 @@
 
 @mixin gradient-loading {
 	background: v.$primary-color;
-	background: linear-gradient(90deg, rgba(147,86,220,1) 0%, rgba(147,86,220,1) 75%, rgba(255,121,218,1) 100%); }
+	background: linear-gradient(
+		90deg,
+		rgba(147, 86, 220, 1) 0%,
+		rgba(147, 86, 220, 1) 75%,
+		rgba(255, 121, 218, 1) 100%
+	);
+}

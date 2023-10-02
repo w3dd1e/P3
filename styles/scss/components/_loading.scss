@@ -29,7 +29,6 @@
 .loading__circle {
 	background-color: a.$primary-color;
 	@include a.circle(4.5rem, 4.5rem, a.$background-medium);
- 
 
 	position: relative;
 	top: -5.25rem;
@@ -42,4 +41,3 @@
 	top: 5rem;
 	@include a.box-shadow--loading;
 }
-

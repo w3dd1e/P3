@@ -11,7 +11,7 @@
 	}
 
 	&__logo {
-		font-family: 'Shrikhand', serif;
+		font-family: "Shrikhand", serif;
 		font-size: 1rem;
 		font-weight: 400;
 	}
@@ -21,7 +21,7 @@
 	}
 
 	&__icon {
-		width: .5rem;
+		width: 0.5rem;
 		padding-right: 1.5rem;
 	}
 
@@ -36,13 +36,12 @@
 	}
 }
 @include a.desktop {
-
-.footer__list {
-	margin: auto;
-	@include a.flex-center;
-gap: 2rem;
-}
-.footer__title {
-	padding: 0;
-}
+	.footer__list {
+		margin: auto;
+		@include a.flex-center;
+		gap: 2rem;
+	}
+	.footer__title {
+		padding: 0;
+	}
 }

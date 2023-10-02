@@ -7,12 +7,11 @@
 	@include a.box-shadow;
 	@include a.gradient-button;
 	display: inline-block;
-width: 14rem;
+	width: 14rem;
 	&:hover {
 		@include a.box-shadow--dark;
 		@include a.gradient-button--light;
 		cursor: pointer;
-		
 	}
 
 	&__container {

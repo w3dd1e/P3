@@ -28,7 +28,6 @@
 		padding-bottom: 5rem;
 
 		&__title {
-		
 			padding-bottom: 2rem;
 		}
 
@@ -43,23 +42,21 @@
 			max-width: 47%;
 			min-width: 0;
 			display: flex;
-
 		}
-			.card__link {
-				justify-content: flex-start;
-				position: relative;
-			}
+		.card__link {
+			justify-content: flex-start;
+			position: relative;
+		}
 
-			.card__like {
-				position: absolute;
-				bottom: 0.5rem;
-				right: 1rem;
-				margin: 0;
-			}
+		.card__like {
+			position: absolute;
+			bottom: 0.5rem;
+			right: 1rem;
+			margin: 0;
+		}
 		
-}}
-	
-
+	}
+}
 
 @include a.desktop {
 	.restaurants {
@@ -80,6 +77,6 @@
 			flex: 1 50%;
 			max-width: 40%;
 			min-width: 0;
+		}
 	}
-}
 }

@@ -1,20 +1,18 @@
-@forward './home';
-@forward './restaurant';
-
+@forward "./home";
+@forward "./restaurant";
 
 body {
+	section,
+	footer {
+		padding: 1rem;
+	}
 
-   
-     section, footer {
-        padding: 1rem;
+	ol,
+	ul {
+		padding: 0;
+	}
 
-    }
-    
-    ol, ul {
-        padding: 0;
-    }
-
-    main {
-        position: relative;
-    }
+	main {
+		position: relative;
+	}
 }
