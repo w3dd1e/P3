@@ -37,8 +37,10 @@
 
     .how-to {
         flex: 1 15%;
+        margin-top: 0;
         margin-left: auto;
         min-width: 20.6rem;
+        padding: 0;
    &__list {
         display: flex;
         flex-direction: column;
