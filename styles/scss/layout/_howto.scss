@@ -1,5 +1,5 @@
 @use "../abstracts/" as a;
-
+//Positioned vertically above resaurant list
 .how-to {
 	padding: 1.5rem;
 
@@ -14,6 +14,8 @@
 	}
 }
 
+//Positioned horizontally above restaurant list
+
 @include a.tablet {
 	.how-to {
 		margin: 2rem 0;
@@ -26,6 +28,7 @@
 	}
 }
 
+//Positioned vertically on left of restaurant list
 @include a.desktop {
 	.how-to {
 		flex: 1 15%;

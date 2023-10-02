@@ -1,5 +1,6 @@
 @use "../abstracts" as a;
 
+//Logo visible on every page, back button only visible on resaurant pages
 .nav {
 	&__list {
 		@include a.flex-center-column;
