@@ -1,11 +1,15 @@
 @use "../abstracts/" as a;
 
+
+//Fade in menu item
 .card--menu {
 	animation-duration: 0.75s;
 	animation-name: fadeIn;
 	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 	animation-fill-mode: backwards;
 }
+
+//Loop through each child of menu and adjust timing accordingly
 @for $i from 1 through 3 {
 	.card--menu:nth-child(#{$i}) {
 		animation-delay: $i * 300ms;

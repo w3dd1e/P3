@@ -26,6 +26,9 @@
 	animation-fill-mode: forwards;
 	opacity: 0.8;
 }
+
+//Make circle look hollow by overlapping circle that matches background color
+//Inset shadow for depth effect
 .loading__circle {
 	background-color: a.$primary-color;
 	@include a.circle(4.5rem, 4.5rem, a.$background-medium);
