@@ -49,9 +49,11 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		
 
 		& section {
 			flex: 1 30%;
+			margin: 0;
 		}
 
 		&__list {

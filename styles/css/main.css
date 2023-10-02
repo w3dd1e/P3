@@ -373,6 +373,7 @@ main {
   }
   .menu section {
     flex: 1 30%;
+    margin: 0;
   }
   .menu__list {
     flex-basis: 30%;
