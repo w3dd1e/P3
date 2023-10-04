@@ -38,6 +38,14 @@
 	}
 }
 
+.hcard--3 {
+	background-color: lighten( a.$primary-color, 33%);
+
+	.fa-shop {
+		color: a.$primary-color;
+	}
+}
+
 @include a.tablet {
 	.hcard {
 		flex: 1 30%;

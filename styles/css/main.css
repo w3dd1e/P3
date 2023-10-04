@@ -566,6 +566,13 @@ main {
   color: #888888;
 }
 
+.hcard--3 {
+  background-color: #ece1f9;
+}
+.hcard--3 .fa-shop {
+  color: #9356dc;
+}
+
 @media only screen and (min-width: 768px) {
   .hcard {
     flex: 1 30%;
