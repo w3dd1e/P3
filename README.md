@@ -1,5 +1,5 @@
 # Ohmyfood - Reservation and Ordering 
-Project #3 Web Development - OpenClassrooms
+Project #3 Web Development - 
 
 This site was completed with HTML, SCSS, and CSS in VSCode and processed commits using Git via Linux on Windows with WSL.
 
